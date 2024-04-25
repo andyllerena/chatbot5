@@ -1,0 +1,9 @@
+requests
+jupyter
+numpy 
+pandas
+matplotlib
+scikit-learn
+nltk
+xgboost
+tensorflow
