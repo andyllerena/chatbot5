@@ -27,6 +27,7 @@ import pandas as pd
 import json
 
 from sklearn.model_selection import train_test_split
+from word_process import WordProcess
 
 # version = "cnn_v1"
 
@@ -58,13 +59,6 @@ print(model_loaded.summary())
 model_loaded.load_weights(model_path)
 
 # Preprocessing function
-import nltk
-import re
-import pickle
-from nltk.stem.porter import PorterStemmer
-from nltk.corpus import stopwords
-from word_process import WordProcess
-
 nltk.download('stopwords')
 
 tokenizer = pickle.load(open(tokenizer_path, 'rb'))
