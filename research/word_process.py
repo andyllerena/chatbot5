@@ -9,9 +9,9 @@ from nltk.tokenize import wordpunct_tokenize
 class WordProcess:
     def __init__(self):
         self.lemm = WordNetLemmatizer()
-        nltk.download("stopwords")
-        nltk.download('wordnet')
-        nltk.download('averaged_perceptron_tagger')
+        # nltk.download("stopwords")
+        # nltk.download('wordnet')
+        # nltk.download('averaged_perceptron_tagger')
 
     def get_wordnet_pos(self, pos):
         if pos.startswith('J'):
